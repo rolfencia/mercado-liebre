@@ -1,0 +1,16 @@
+{
+  "name": "mercado-liebre",
+  "version": "1.0.0",
+  "description": "ejercitacion mercado liebre",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Flor Estevez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6",
+    "normalize.css": "^8.0.1"
+  }
+}

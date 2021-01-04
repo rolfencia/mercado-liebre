@@ -1,0 +1,535 @@
+
+/* globals */
+
+/* colores para el sitio:
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto";
+}
+
+a {
+  text-decoration: none;
+  color: #03264C;
+}
+
+
+/* ---- Header (Todas las paginas) ---- */
+
+.header-container {
+  background-color: #EAC926;    
+  padding: 1rem;
+}
+
+/* menu logo + busqueda */
+.top-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo, .search-bar{
+  padding: 0.5rem;
+}
+
+.logo {
+  width: 40%;
+  height: auto;
+}
+
+.search-bar {
+  width: 60%;
+}
+
+.search-form, .burger-menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.search-input {
+  width: 75%;
+  border: 0.8px solid #EAC926;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  padding: 5px;
+}
+
+.search-button {
+  width: 2.2rem;
+  background-color: white;
+  border: 0.8px  solid #EAC926;
+  border-left: 0.8px  solid white; 
+  border-radius: 0 5px 5px 0;
+  padding: 5px 5px;    
+}
+
+/* cuotas */
+.cuotas{
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cuotas-icon {
+  margin-right: 0.5rem;
+}
+
+/* menu minimizado - mobile */
+.burger-menu {
+  padding-bottom: 1.5rem;
+}
+
+.burger-menu i {
+  background-color: #03264C;
+  color: white;
+  padding: 1rem 1.5rem;
+  font-size: 1.4rem;
+  border-radius: 5px;
+}
+
+.burger-menu i:hover { 
+  background-color: #1259c3; 
+}
+
+/* menu para desktop -oculto en mobile */
+.main-navbar {
+  display: none;
+}
+
+/* ---- home - banner de promo --- */
+
+.promo {
+  background-color: #ebebeb;
+}
+
+.banner {
+  width: 100%;
+  display: inline-block;
+}
+
+/* ---- home - productos --- */
+
+main {
+  background-color: #ebebeb;
+  padding-bottom: 1.2rem;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.products h2 {
+  width: 100%;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #666;
+  padding-left: 3.7rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.product-box {
+    width: 90%;
+    background-color: white;
+    border: 1rem;
+    margin: 1.2rem;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.product-box img {
+  width: 100%;
+}
+
+.product-info {
+  border-top: 1px solid #ebebeb;
+  margin-bottom: 1rem;
+  position: relative; 
+}
+
+.product-info i {
+  display: block;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid #39b54a;
+  background-color: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  right: 2rem;
+  top: -1rem;
+}
+
+.fa-truck {
+  color: #39b54a;
+  font-size: 2rem;
+  transition: transform 2s;
+  transform-origin: 50%;
+}
+
+.price {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1.8rem;
+}
+
+.product-price {
+  font-size: 2rem;
+  color: rgb(41, 40, 40);
+  width: 30%;
+}
+
+.discount {
+  width: 70%;
+  color: #39b54a;
+  font-size: 1.6rem;
+  padding-left: 2rem;
+}
+
+.product-name {
+  margin-left: 1.2rem;
+  color: #666;
+  font-size: 1.6rem;
+}
+
+/* ---- footer (Todas las paginas) --- */
+
+.main-footer {
+  margin-top: 3rem;
+}
+
+.row-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-info {
+  margin: 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-info i {
+  font-size: 3rem;
+  margin: 0.5rem;
+  color: #03264C;
+}
+
+.footer-info h2 {
+  font-size: 2.4rem;
+  text-align: center;
+  padding-top: 0.3rem;
+  margin: 0rem 0rem 1.5rem;
+  color: rgb(41, 40, 40);
+}
+
+.footer-info p {
+  max-width: 70%;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+.copy-right {
+  text-align: center;
+  margin: 2rem 3rem;
+  font-size: 0.8rem;
+}
+
+.copy-right {
+    font-size: 1.2rem;
+    border-top: 1px solid #ebebeb;
+    padding: 10px 0 10px 5px;
+    color: #666;
+}
+
+
+/* ------- /register.html ------- */
+
+.register {
+  background-color: #ebebeb;
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: left;
+}
+
+.form {
+  border-radius: 5px;
+  border: 0px;
+}
+
+form h4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: black;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+form label {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.user-data {
+  width: 100%;
+  padding: 1.5rem;
+  margin: 0.5rem 0 2.2rem 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  color: #666;
+}
+
+
+form input[type=checkbox], input[type=radio]{
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: white;
+  padding: 1.5rem;
+}
+
+
+.btn-send {
+  width: 30%;
+  background-color: #0044aa;
+  color: white;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.btn-reset {
+  width: 30%;
+  background-color: red;
+  color: white;
+  padding: 1rem;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+
+/* ------- /login.html ------- */
+
+.login {
+  background-color: #ebebeb;
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login .btn-send:hover {
+  width: 30%;
+  background-color: #0022AA;
+}
+
+/* --------------------------------- */
+/* --------------------------------- */
+/* ---------- media querys --------- */
+/* --------------------------------- */
+/* --------------------------------- */
+
+
+@media (min-width: 481px) {
+  /* Tablets - header */
+
+  .header-container {
+    padding-top: 1rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+.top-header {
+    width: 100%;
+    flex-direction: row;
+}
+
+.logo {
+    width: 20%;
+    height: auto;
+}
+
+.search-bar {
+  width: 38%;
+}
+
+.search-input {
+  height: 3rem;
+}
+
+.search-button {
+  height: 3rem;    
+}
+
+.cuotas {
+  width: 28%;
+  text-align: right;
+}
+
+.main-navbar {
+  width: 100%;
+  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+  padding-top: 2rem;
+}
+
+.left-navbar {
+  align-self: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.right-navbar {
+    align-self: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.main-navbar li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 1rem;
+}
+
+.main-navbar li:last-child {
+  margin-right: 1.5rem;
+}
+
+.burger-menu {
+  display: none;
+}
+
+/*Header end*/
+
+.productos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;        
+}
+
+.product-box {
+width: calc(45% - 1rem);
+}
+
+
+@media (min-width: 768px) {
+
+  .main-navbar {
+    padding-top: 2rem;
+  }
+
+  .main-navbar li {
+    font-size: 1.6rem;
+  }
+
+  .cuotas {
+    width: 26%;
+    text-align: right;
+  }
+
+  .search-input {
+    height: 4rem;
+  }
+  
+  .search-button {
+    height: 4rem;    
+  }
+
+  /* Laptop - products */
+
+  .products {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    margin-bottom: 3rem; 
+    padding: 1rem 3rem;
+  }
+
+  .product-box {
+    width: calc(23% - 1rem);
+    align-self: flex-start;
+    transition: box-shadow 1s;
+  }
+
+  .product-name {
+    display: none;
+    transition: 1s;
+  }
+
+  .product-box:hover .fa-truck {
+  transform: rotate(-90deg);
+}
+
+  .product-box:hover {
+  box-shadow: 0px 0px 10px #666;
+  margin-bottom: -10rem;
+}
+
+  .product-box:hover .product-name {
+    display: flex;
+}
+
+    /* Laptop - footer */
+
+    .main-footer {
+      margin: 4rem 4rem;
+    }
+
+    .row-footer {
+      padding: 0.5rem 5rem;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+  
+    .footer-info {
+      margin: 0.5rem;
+      width: calc(33% - 3rem);
+    }
+
+  .footer-info i:hover {
+      color: #1259c3;
+  }
+}
+}
