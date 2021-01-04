@@ -533,3 +533,11 @@ width: calc(45% - 1rem);
   }
 }
 }
+
+@media (min-width: 1200px) {
+
+  .main-header, main {
+      max-width: 1200px;
+      margin: auto;
+      }
+}
