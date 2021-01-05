@@ -404,9 +404,7 @@ form input[type=checkbox], input[type=radio]{
 
 .main-navbar {
   width: 100%;
-  display: block;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   padding: 1rem;
   padding-top: 2rem;
