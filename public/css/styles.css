@@ -364,7 +364,7 @@ form input[type=checkbox], input[type=radio]{
 /* --------------------------------- */
 
 
-@media (min-width: 481px) {
+@media (min-width: 600px) {
   /* Tablets - header */
 
   .header-container {
