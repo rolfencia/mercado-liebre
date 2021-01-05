@@ -537,7 +537,7 @@ width: calc(45% - 1rem);
 @media (min-width: 1200px) {
 
   .main-header, main {
-      max-width: 1200px;
+      max-width: 1300px;
       margin: auto;
       }
 }
