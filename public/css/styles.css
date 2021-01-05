@@ -538,6 +538,5 @@ width: calc(45% - 1rem);
 
   .main-header, main {
       max-width: 1300px;
-      margin: auto;
       }
 }
